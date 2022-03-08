@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="outer" id="top">
+      <h1>2048</h1>
+      <div class="score-container">
+        <div class="tips">
+          <p>Join the tiles and get to <strong>2048</strong>!</p>
+          <br />
+          <a href="#rules" id="l1"><i>How</i> to play?</a>
+        </div>
+        <div class="score-title">
+          Score
+          <span id="score">0</span>
+        </div>
+      </div>
+      <div id="result"></div>
+      <div class="grid"></div>
+      <hr />
+      <div class="end">
+        <h3>Directions</h3>
+        <ul id="rules">
+          <li>
+            Use the <kbd>↑</kbd>, <kbd>↓</kbd>, <kbd>→</kbd> and
+            <kbd>←</kbd> keys to shift tiles
+          </li>
+          <li>The tiles, when shifted onto, will add up</li>
+          <li>
+            The number <strong>2</strong> will appear on a random tile after
+            every move
+          </li>
+          <li>You win as soon as <strong>2024</strong> is gotten</li>
+          <li>
+            You will lose as soon as the board is full <em>and</em> no tiles can
+            be added
+          </li>
+        </ul>
+        <br />
+        <p><a href="#top" id="l2">Start playing!</a></p>
+        <hr />
+        <p>
+          Built by
+          <a href="https://github.com/ayushpareek179" target="_blank"
+            >@ayushpareek179</a
+          >, based on
+          <a href="https://play2048.co/" target="_blank">2048</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
